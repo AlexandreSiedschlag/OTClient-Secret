@@ -1,0 +1,8 @@
+say("!autoloot clear")
+
+local itemsLoot = {"hydra head", "boots of haste", "medusa shield", "knight armor", "warrior helmet"}
+for _, itemName in ipairs(itemsLoot) do
+  say("!autoloot add," .. itemName)
+end
+
+return true
