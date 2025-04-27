@@ -13,39 +13,37 @@ end
 
 --------------------------------------------------------------
 -- Dont change this
-dofile("/vBot/FirstLoadThis/items.lua")
-dofile("/vBot/FirstLoadThis/vlib.lua")
-dofile("/vBot/FirstLoadThis/new_cavebot_lib.lua")
-dofile("/vBot/FirstLoadThis/configs.lua")
-dofile("/vBot/FirstLoadThis/secret_functions.lua")
+dofile("/SecretBot/FirstLoadThis/items.lua")
+dofile("/SecretBot/FirstLoadThis/vlib.lua")
+dofile("/SecretBot/FirstLoadThis/new_cavebot_lib.lua")
+dofile("/SecretBot/FirstLoadThis/configs.lua")
 
--- The vBot needs the class CaveBot and TargetBot to work, so load them first
-dofile("/vBot/Cave/cavebot.lua")
-dofile("/vBot/Target/target.lua")
+-- The SecretBot needs the class CaveBot and TargetBot to work, so load them first
+dofile("/SecretBot/Cave/cavebot.lua")
+dofile("/SecretBot/Target/target.lua")
 
-loadUI('/bot/.aSecret/vBot/Main/Sprites')
-loadUI('/bot/.aSecret/vBot/Tools/Sprites')
-loadUI('/bot/.aSecret/vBot/HP/Sprites')
-loadUI('/bot/.aSecret/vBot/Hud/Sprites')
-loadUI('/bot/.aSecret/vBot/Cave/Sprites')
-loadUI('/bot/.aSecret/vBot/Target/Sprites')
+loadUI('/bot/.aSecret/SecretBot/Main/Sprites')
+loadUI('/bot/.aSecret/SecretBot/Tools/Sprites')
+loadUI('/bot/.aSecret/SecretBot/HP/Sprites')
+loadUI('/bot/.aSecret/SecretBot/Hud/Sprites')
+loadUI('/bot/.aSecret/SecretBot/Cave/Sprites')
+loadUI('/bot/.aSecret/SecretBot/Target/Sprites')
 -- Dont change this
 --------------------------------------------------------------
 
 -- Change this
 --------------------------------------------------------------
 UI.Separator()
-dofile("/vBot/Main/main.lua")
+dofile("/SecretBot/Main/main.lua")
 --------------------------------------------------------------
 UI.Separator()
-dofile("/vBot/Tools/tools.lua")
+dofile("/SecretBot/Tools/tools.lua")
 --------------------------------------------------------------
 UI.Separator()
-dofile("/vBot/HP/hp.lua")
+dofile("/SecretBot/HP/hp.lua")
 --------------------------------------------------------------
 UI.Separator()
-dofile("/vBot/Hud/hud.lua")
-
+dofile("/SecretBot/Hud/hud.lua")
 --------------------------------------------------------------
 
 -- Change this
