@@ -14,7 +14,7 @@ if voc() ~= 1 and voc() ~= 11 then
             end
         end
     end
-    macro(500, "Cast Food", function()
+    macro(500, "CAST FOOD", function()
         if player:getRegenerationTime() <= 400 then
             cast("exevo pan", 5000)
         end

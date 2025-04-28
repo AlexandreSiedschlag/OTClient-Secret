@@ -1,26 +1,23 @@
 local ui = setupUI([[
 Panel
-  width: 2000
-  height:2000
+  width:  5000
+  height: 5000
 
   Label
-    id: targetLabel
+    id: cavebotMarkerLabel
     x: 202
     y: 075
     font: verdana-11px-rounded
-
   Label
-    id: caveLabel
+    id: targetLabel
     x: 202
     y: 090
     font: verdana-11px-rounded
-
   Label
-    id: staminaLabel
+    id: caveLabel
     x: 202
-    y: 105
+    y: 0105
     font: verdana-11px-rounded
-
   Label
     id: positionLabel
     x: 202
@@ -28,59 +25,142 @@ Panel
     font: verdana-11px-rounded
 
   Label
-    id: taskCounterLabel
+    id: skillsMarkerLabel
     x: 202
-    y: 135
+    y: 200
     font: verdana-11px-rounded
-
+  Label
+    id: staminaLabel
+    x: 202
+    y: 215
+    font: verdana-11px-rounded
   Label
     id: magicLevelLabel
     x: 202
-    y: 150
+    y: 230
+    font: verdana-11px-rounded
+
+  Label
+    id: taskMarkerLabel
+    x: 202
+    y: 500
+    font: verdana-11px-rounded
+  Label
+    id: taskNameLabel
+    x: 202
+    y: 515
+    font: verdana-11px-rounded
+  Label
+    id: taskCounterLabel
+    x: 202
+    y: 530
+    font: verdana-11px-rounded
+  Label
+    id: taskCompletedLabel
+    x: 202
+    y: 545
+    font: verdana-11px-rounded
+  Label
+    id: taskInProgressLabel
+    x: 202
+    y: 560
+    font: verdana-11px-rounded
+  Label
+    id: taskDoneLabel
+    x: 202
+    y: 575
+    font: verdana-11px-rounded
+  Label
+    id: taskBossLabel
+    x: 202
+    y: 590
     font: verdana-11px-rounded
 ]], g_ui.getRootWidget())
 
 local function getTargetBotStatus()
-  return TargetBot.isOn() and "ON" or TargetBot.isOff() and "OFF"
+    return TargetBot.isOn() and "ON" or TargetBot.isOff() and "OFF"
 end
 
 local function getCaveBotStatus()
-  return CaveBot.isOn() and "ON" or CaveBot.isOff() and "OFF"
+    return CaveBot.isOn() and "ON" or CaveBot.isOff() and "OFF"
 end
 
 local function getColorFromStatus(status)
-  return status == "ON" and "green" or status == "OFF" and "red"
+    return status == "ON" and "green" or status == "OFF" and "red"
 end
 
 local function getStamina()
-  local stamina = stamina()
-  local minutes = math.floor(stamina / 60)
-  local seconds = stamina % 60
-  local stamina = string.format("%02d:%02d", minutes, seconds)
-  return stamina
+    local stamina = stamina()
+    local minutes = math.floor(stamina / 60)
+    local seconds = stamina % 60
+    local stamina = string.format("%02d:%02d", minutes, seconds)
+    return stamina
 end
 
 local function getPosition()
-  local myposition = pos().x .. " ".. pos().y .. " " .. pos().z
-  return myposition
+    local myposition = pos().x .. " ".. pos().y .. " " .. pos().z
+    return myposition
 end
 
 local function getMagicLevel()
-  local magiclevel = player:getMagicLevel()
-  return magiclevel
+    local magiclevel = player:getMagicLevel()
+    return magiclevel
+end
+
+local function getTaskInProgress(taskData)
+    local taskInProgress = taskData.in_progress
+    if taskInProgress then
+        return "YES"
+    else
+        return "NO"
+    end
+end
+
+local function getTaskDone(taskData)
+    local taskDone = taskData.done
+    if taskDone then
+        return "YES"
+    else
+        return "NO"
+    end
 end
 
 macro(100, function()
-  local targetStatus = getTargetBotStatus()
-  local caveStatus = getCaveBotStatus()
-  local targetColor = getColorFromStatus(targetStatus)
-  local caveColor = getColorFromStatus(caveStatus)
+    -- Target
+    local targetStatus = getTargetBotStatus()
+    local targetColor = getColorFromStatus(targetStatus)
+    ui.targetLabel:setColoredText({"Target: ", "white", targetStatus, targetColor})
 
-  ui.targetLabel:setColoredText({"Target: ", "white", targetStatus, targetColor})
-  ui.caveLabel:setColoredText({"Cavebot: ",  "white", caveStatus, caveColor})
-  ui.staminaLabel:setColoredText({"Stamina: ",  "white", getStamina(), 'yellow'})
-  ui.positionLabel:setColoredText({"Position: ",  "white", getPosition(), 'yellow'})
-  ui.taskCounterLabel:setColoredText({"Task Counter: ",  "white", storage.caveVariables.monsterAmountNow .. " / " .. storage.caveVariables.monsterAmountMax, 'yellow'})
-  ui.magicLevelLabel:setColoredText({"Magic Level: ",  "white", getMagicLevel(), 'yellow'})
+    -- CaveBot
+    local caveStatus = getCaveBotStatus()
+    local caveColor = getColorFromStatus(caveStatus)
+    ui.cavebotMarkerLabel:setColoredText({"----CaveBot----", "white", "", "yellow"})
+    ui.caveLabel:setColoredText({"Cavebot: ",  "white", caveStatus, caveColor})
+    ui.positionLabel:setColoredText({"Position: ",  "white", getPosition(), 'yellow'})
+
+    -- Skills
+    ui.skillsMarkerLabel:setColoredText({"----Skills----", "white", "", "yellow"})
+    ui.staminaLabel:setColoredText({"Stamina: ",  "white", getStamina(), 'yellow'})
+    ui.magicLevelLabel:setColoredText({"Magic Level: ",  "white", getMagicLevel(), 'yellow'})
+
+    -- Tasker
+    local taskName = storage.secretTasker.taskName or ""
+    local taskData = storage.secretTasker.taskInfo[taskName]
+    local taskCounter = "No Task"
+    if taskData then
+        taskCounter = taskData.monsters_killed .. " / " .. taskData.monsters_to_kill
+        taskCompleted = taskData.amount_of_task_done .. " / " .. taskData.amount_of_task_todo
+        taskInProgress = getTaskInProgress(taskData)
+        taskDone = getTaskDone(taskData)
+        taskBoss = taskData.boss[1]
+    end
+
+    ui.taskMarkerLabel:setColoredText({"----Task----", "white", "", "yellow"})
+    ui.taskNameLabel:setColoredText({"Name: ", "white", taskName, "yellow"})
+    ui.taskCounterLabel:setColoredText({"Counter: ", "white", taskCounter, "yellow"})
+    ui.taskCompletedLabel:setColoredText({"Completed: ", "white", taskCompleted, "yellow"})
+    ui.taskInProgressLabel:setColoredText({"In Progress: ", "white", taskInProgress, "yellow"})
+    ui.taskDoneLabel:setColoredText({"Done: ", "white", taskDone, "yellow"})
+    ui.taskBossLabel:setColoredText({"Boss: ", "white", taskBoss, "yellow"})
 
 end)

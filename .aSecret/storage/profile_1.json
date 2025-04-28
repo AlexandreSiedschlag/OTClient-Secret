@@ -3,35 +3,35 @@
   "combobot": {
     "attackSpellEnabled": false,
     "attackLeaderTargetEnabled": false,
-    "onShootEnabled": false,
-    "item": 3155,
-    "serverLeaderTarget": false,
-    "onCastEnabled": false,
-    "serverEnabled": false,
-    "attack": "",
-    "onSayEnabled": false,
-    "sayLeader": "",
-    "spell": "",
     "shootLeader": "",
-    "attackItemToggle": false,
+    "onCastEnabled": false,
     "followLeaderEnabled": false,
     "commandsEnabled": true,
-    "sayPhrase": "",
-    "serverTriggers": true,
-    "serverLeader": "",
+    "serverEnabled": false,
+    "onSayEnabled": false,
+    "attack": "",
     "enabled": false,
+    "spell": "",
+    "onShootEnabled": false,
+    "attackItemToggle": false,
+    "serverTriggers": true,
+    "item": 3155,
+    "sayPhrase": "",
+    "serverLeaderTarget": false,
+    "serverLeader": "",
+    "sayLeader": "",
     "follow": "",
     "castLeader": ""
   },
   "extras": {
     "rope": 9596,
     "pathfinding": true,
-    "bless": true,
+    "timers": true,
     "machete": 9596,
     "separatePm": false,
-    "highlightTarget": true,
+    "reUse": false,
     "gotoMaxDistance": 30,
-    "holdWgHot": "F6",
+    "killUnder": 1,
     "holdMwall": true,
     "checkPlayer": true,
     "looting": 40,
@@ -40,166 +40,103 @@
     "joinBot": false,
     "lootLast": true,
     "holdMwHot": "F5",
-    "nextBackpack": true,
+    "reachable": false,
     "shovel": 9596,
     "lootDelay": 200,
-    "title": true,
-    "autoOpenDoors": true,
-    "stake": false,
-    "scythe": 9596,
-    "huntRoutes": 50,
-    "oberon": true,
-    "antiKick": true,
     "talkDelay": 1000,
-    "reachable": false,
-    "killUnder": 1,
-    "reUse": false,
+    "autoOpenDoors": true,
+    "holdWgHot": "F6",
+    "nextBackpack": true,
+    "oberon": true,
+    "huntRoutes": 50,
+    "antiKick": true,
+    "title": true,
+    "scythe": 9596,
+    "stake": false,
+    "highlightTarget": true,
     "height": 360,
-    "timers": true
+    "bless": true
   },
   "foodItems": [
     {
-      "id": 3582,
+      "count": 1,
+      "id": 3582
+    },
+    {
+      "count": 1,
+      "id": 3577
+    },
+    {
+      "id": 3607,
       "count": 1
     },
     {
-      "id": 3577,
+      "id": 3585,
       "count": 1
     },
     {
-      "count": 1,
-      "id": 3607
+      "id": 3592,
+      "count": 1
     },
     {
-      "count": 1,
-      "id": 3585
+      "id": 3600,
+      "count": 1
     },
     {
-      "count": 1,
-      "id": 3592
-    },
-    {
-      "count": 1,
-      "id": 3600
-    },
-    {
-      "count": 1,
-      "id": 3601
+      "id": 3601,
+      "count": 1
     }
   ],
   "dropper": {
     "enabled": true,
     "trashItems": [
       {
-        "count": 1,
-        "id": 283
+        "id": 283,
+        "count": 1
       },
       {
-        "count": 1,
-        "id": 284
+        "id": 284,
+        "count": 1
       },
       {
-        "count": 1,
-        "id": 285
+        "id": 285,
+        "count": 1
       },
       {
-        "count": 13,
-        "id": 3725
+        "id": 3725,
+        "count": 13
       },
       {
-        "count": 1,
-        "id": 2996
+        "id": 2996,
+        "count": 1
       }
     ],
     "useItems": [
       {
-        "count": 1,
-        "id": 2995
+        "id": 2995,
+        "count": 1
       }
     ],
     "capItems": [
       {
-        "id": 21175,
-        "count": 1
+        "count": 1,
+        "id": 21175
       }
     ]
   },
-  "analyzers": {
-    "lootChannel": true,
-    "customPrices": [
-
-    ],
-    "trackedLoot": [
-
-    ],
-    "rarityFrames": true
-  },
-  "bestHit": 0,
-  "EquipperPanel": {
-    "enabled": true,
-    "bosses": [
-
-    ],
-    "rules": [
-
-    ]
-  },
-  "_configs": {
-    "SecretBot/Target/Configs": {
-      "selected": "ALL_MONSTERS",
-      "enabled": false
-    },
-    "SecretBot/Cave/Scripts": {
-      "selected": "Hunt_Behemoth",
-      "enabled": false
-    }
-  },
-  "playerList": {
-    "enemyList": [
-
-    ],
-    "outfits": false,
-    "groupMembers": true,
-    "marks": false,
-    "highlight": false,
-    "blackList": [
-
-    ],
-    "friendList": [
-
-    ]
-  },
-  "BOTserver": {
-    "manaInfo": true,
-    "mwallInfo": true,
-    "mwalls": {
-      "1142,149,6": 82817861
-    },
-    "outfit": false,
-    "broadcasts": true,
-    "enabled": true,
-    "vocation": true
-  },
-  "autoParty": {
-    "onMove": true,
-    "enabled": true,
-    "leaderName": "Xandaodruid",
-    "autoPartyList": [
-
-    ]
-  },
-  "pushmax": {
-    "pushMaxRuneId": 3188,
-    "mwallBlockId": 2128,
-    "pushDelay": 1060,
-    "enabled": false,
-    "pushMaxKey": "PageUp"
-  },
-  "caveVariables": {
+  "secretTasker": {
     "monsterAmountMax": 30,
     "staminaPotionId": 11372,
     "monsterRegex": "\\[Task System\\] You kill \\[([0-9]+)/([0-9]+)\\] ([A-Za-z ]+)\\.",
-    "taskInProgress": true,
+    "whatToDo": [
+      "setup",
+      "getTask",
+      "checkTask",
+      "checkStamina",
+      "reportTask"
+    ],
+    "monsterAmountNow": 30,
+    "staminaMinimum": 15,
     "taskInfo": {
       "Frost Dragons": {
         "task_points": 7,
@@ -311,21 +248,22 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Dracarys": {
-        "task_points": 19,
+      "Medusas": {
+        "task_points": 1,
         "monsters": [
-          "Dracarys"
+          "Medusa",
+          "Serpent Spawn"
         ],
-        "monsters_to_kill": 8500,
+        "monsters_to_kill": 1900,
         "drops": [
-
+          "medusa shield"
         ],
-        "experience": 11000000,
-        "in_progress": false,
-        "monsters_killed": 0,
+        "experience": 322000000,
+        "in_progress": true,
+        "monsters_killed": 1597,
         "amount_of_task_done": 0,
         "boss": [
-          "Dracarys"
+          "Gorgo"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -589,30 +527,23 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Quaras": {
-        "task_points": 8,
+      "Giant Spider": {
+        "task_points": 4,
         "monsters": [
-          "Quara Constrictor",
-          "Quara Constrictor Scout",
-          "Quara Hydromancer",
-          "Quara Hydromancer Scout",
-          "Quara Mantassin",
-          "Quara Mantassin Scout",
-          "Quara Pincher",
-          "Quara Pincher Scout",
-          "Quara Predator",
-          "Quara Predator Scout"
+          "Giant Spider"
         ],
-        "monsters_to_kill": 2800,
+        "monsters_to_kill": 500,
         "drops": [
-
+          "knight armor",
+          "knight legs",
+          "time ring"
         ],
-        "experience": 4000000,
+        "experience": 1800000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Quara Queen"
+          "Spider Queen"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -653,8 +584,8 @@
 
         ],
         "experience": 550000,
-        "in_progress": false,
-        "monsters_killed": 0,
+        "in_progress": true,
+        "monsters_killed": 30,
         "amount_of_task_done": 0,
         "boss": [
           "Rotworm Queen"
@@ -662,21 +593,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Sandstone Scorpion": {
-        "task_points": 12,
+      "Killer Caiman": {
+        "task_points": 13,
         "monsters": [
-          "Sandstone Scorpion"
+          "Killer Caiman"
         ],
-        "monsters_to_kill": 4750,
+        "monsters_to_kill": 5000,
         "drops": [
 
         ],
-        "experience": 6700000,
+        "experience": 7000000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Scorpion King"
+          "Caiman Master"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -730,25 +661,6 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Bane Bringer": {
-        "task_points": 15,
-        "monsters": [
-          "Bane Bringer"
-        ],
-        "monsters_to_kill": 7500,
-        "drops": [
-
-        ],
-        "experience": 8900000,
-        "in_progress": false,
-        "monsters_killed": 0,
-        "amount_of_task_done": 0,
-        "boss": [
-          "Bringer of Bane"
-        ],
-        "done": false,
-        "amount_of_task_todo": 3
-      },
       "Deepling Brawler": {
         "task_points": 20,
         "monsters": [
@@ -768,6 +680,25 @@
         "done": false,
         "amount_of_task_todo": 3
       },
+      "Bane Bringer": {
+        "task_points": 15,
+        "monsters": [
+          "Bane Bringer"
+        ],
+        "monsters_to_kill": 7500,
+        "drops": [
+
+        ],
+        "experience": 8900000,
+        "in_progress": false,
+        "monsters_killed": 0,
+        "amount_of_task_done": 0,
+        "boss": [
+          "Bringer of Bane"
+        ],
+        "done": false,
+        "amount_of_task_todo": 3
+      },
       "Crawler": {
         "task_points": 20,
         "monsters": [
@@ -783,6 +714,31 @@
         "amount_of_task_done": 0,
         "boss": [
           "Giant Crawler"
+        ],
+        "done": false,
+        "amount_of_task_todo": 3
+      },
+      "Hellflayer": {
+        "task_points": 19,
+        "monsters": [
+          "Hellflayer"
+        ],
+        "monsters_to_kill": 9000,
+        "drops": [
+          "magic plate armor",
+          "mastermind sheild",
+          "skull helmet",
+          "golden armor",
+          "magma boots",
+          "magma legs",
+          "titan axe"
+        ],
+        "experience": 11500000,
+        "in_progress": false,
+        "monsters_killed": 0,
+        "amount_of_task_done": 0,
+        "boss": [
+          "Hell King"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -886,8 +842,8 @@
           "plate armor"
         ],
         "experience": 2500000,
-        "in_progress": false,
-        "monsters_killed": 0,
+        "in_progress": true,
+        "monsters_killed": 159,
         "amount_of_task_done": 0,
         "boss": [
           "Behemoth King"
@@ -895,27 +851,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Hellflayer": {
+      "Dracarys": {
         "task_points": 19,
         "monsters": [
-          "Hellflayer"
+          "Dracarys"
         ],
-        "monsters_to_kill": 9000,
+        "monsters_to_kill": 8500,
         "drops": [
-          "magic plate armor",
-          "mastermind sheild",
-          "skull helmet",
-          "golden armor",
-          "magma boots",
-          "magma legs",
-          "titan axe"
+
         ],
-        "experience": 11500000,
+        "experience": 11000000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Hell King"
+          "Dracarys"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -1004,27 +954,6 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Giant Spider": {
-        "task_points": 4,
-        "monsters": [
-          "Giant Spider"
-        ],
-        "monsters_to_kill": 500,
-        "drops": [
-          "knight armor",
-          "knight legs",
-          "time ring"
-        ],
-        "experience": 1800000,
-        "in_progress": false,
-        "monsters_killed": 0,
-        "amount_of_task_done": 0,
-        "boss": [
-          "Spider Queen"
-        ],
-        "done": false,
-        "amount_of_task_todo": 3
-      },
       "Dragons": {
         "task_points": 3,
         "monsters": [
@@ -1090,6 +1019,34 @@
         "done": false,
         "amount_of_task_todo": 3
       },
+      "Quaras": {
+        "task_points": 8,
+        "monsters": [
+          "Quara Constrictor",
+          "Quara Constrictor Scout",
+          "Quara Hydromancer",
+          "Quara Hydromancer Scout",
+          "Quara Mantassin",
+          "Quara Mantassin Scout",
+          "Quara Pincher",
+          "Quara Pincher Scout",
+          "Quara Predator",
+          "Quara Predator Scout"
+        ],
+        "monsters_to_kill": 2800,
+        "drops": [
+
+        ],
+        "experience": 4000000,
+        "in_progress": false,
+        "monsters_killed": 0,
+        "amount_of_task_done": 0,
+        "boss": [
+          "Quara Queen"
+        ],
+        "done": false,
+        "amount_of_task_todo": 3
+      },
       "Ancient Scarab": {
         "task_points": 6,
         "monsters": [
@@ -1109,39 +1066,66 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Killer Caiman": {
-        "task_points": 13,
+      "Sandstone Scorpion": {
+        "task_points": 12,
         "monsters": [
-          "Killer Caiman"
+          "Sandstone Scorpion"
         ],
-        "monsters_to_kill": 5000,
+        "monsters_to_kill": 4750,
         "drops": [
 
         ],
-        "experience": 7000000,
+        "experience": 6700000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Caiman Master"
+          "Scorpion King"
         ],
         "done": false,
         "amount_of_task_todo": 3
       }
     },
-    "whatToDo": [
-      "setup",
-      "getTask",
-      "checkTask",
-      "reportTask",
-      "checkStamina"
-    ],
-    "monsterAmountNow": 0,
-    "staminaMinimum": 15,
-    "autoLootEnabled": true,
-    "monsterActual": "",
+    "monsterActual": "Worms",
     "taskName": "Worms",
-    "staminaPotionUse": "15"
+    "staminaPotionEnabled": false
+  },
+  "analyzers": {
+    "lootChannel": true,
+    "customPrices": [
+
+    ],
+    "trackedLoot": [
+
+    ],
+    "rarityFrames": true
+  },
+  "bestHit": 0,
+  "EquipperPanel": {
+    "bosses": [
+
+    ],
+    "enabled": true,
+    "rules": [
+
+    ]
+  },
+  "_configs": {
+    "SecretBot/Target/Configs": {
+      "enabled": true,
+      "selected": "ALL_MONSTERS"
+    },
+    "SecretBot/Cave/Scripts": {
+      "enabled": false,
+      "selected": "test_tasker"
+    }
+  },
+  "pushmax": {
+    "pushMaxRuneId": 3188,
+    "mwallBlockId": 2128,
+    "pushDelay": 1060,
+    "enabled": false,
+    "pushMaxKey": "PageUp"
   },
   "advancedFriendHealer": {
     "itemHeal": true,
@@ -1152,15 +1136,66 @@
     "healMs": true,
     "minMana": 60,
     "exuraGranSio": true,
-    "healEk": true,
+    "customSpell": false,
     "customSpellName": "exura max sio",
-    "exuraMasRes": true,
-    "distance": 8,
-    "enabled": true,
     "minFriendHp": 40,
-    "customSpell": false
+    "enabled": true,
+    "distance": 8,
+    "exuraMasRes": true,
+    "healEk": true
   },
-  "followLeader": "Xandaodruid",
+  "autoParty": {
+    "onMove": true,
+    "enabled": true,
+    "autoPartyList": [
+
+    ],
+    "leaderName": "Xandaodruid"
+  },
+  "_macros": {
+    "": true,
+    "ANTI KICK": true,
+    "SAFE ML TRAINER": false,
+    "BLESS": true,
+    "EXCHANGE ONLINE TOKENS": true,
+    "ANTI RED SKULL": true,
+    "EXCHANGE MONEY": true,
+    "EAT FOOD": true,
+    "CAST FOOD": false,
+    "HOLY BLESS": false,
+    "HIDE TREES": true,
+    "SMART TARGET": true,
+    "USE ONLINE TOKENS": true,
+    "HASTE": true,
+    "SELL WAND": true,
+    "CAST": true
+  },
+  "playerList": {
+    "enemyList": [
+
+    ],
+    "outfits": false,
+    "groupMembers": true,
+    "friendList": [
+
+    ],
+    "highlight": false,
+    "marks": false,
+    "blackList": [
+
+    ]
+  },
+  "BOTserver": {
+    "manaInfo": true,
+    "mwallInfo": true,
+    "mwalls": [
+
+    ],
+    "outfit": false,
+    "broadcasts": true,
+    "vocation": true,
+    "enabled": true
+  },
   "renameContainers": {
     "sort": true,
     "forceOpen": true,
@@ -1168,20 +1203,20 @@
       {
         "items": [
           {
-            "id": 3003,
-            "count": 1
+            "count": 1,
+            "id": 3003
           },
           {
-            "id": 3162,
-            "count": 1
+            "count": 1,
+            "id": 3162
           },
           {
-            "id": 3457,
-            "count": 1
+            "count": 1,
+            "id": 3457
           },
           {
-            "id": 3155,
-            "count": 1
+            "count": 1,
+            "id": 3155
           }
         ],
         "value": "MAIN BP",
@@ -1192,28 +1227,28 @@
       {
         "items": [
           {
-            "id": 3031,
-            "count": 1
+            "count": 1,
+            "id": 3031
           },
           {
-            "id": 3035,
-            "count": 1
+            "count": 1,
+            "id": 3035
           },
           {
-            "id": 3043,
-            "count": 1
+            "count": 1,
+            "id": 3043
           },
           {
-            "id": 11969,
-            "count": 1
+            "count": 1,
+            "id": 11969
           },
           {
-            "id": 11973,
-            "count": 1
+            "count": 1,
+            "id": 11973
           },
           {
-            "id": 6526,
-            "count": 1
+            "count": 1,
+            "id": 6526
           }
         ],
         "value": "MONEY",
@@ -1224,16 +1259,16 @@
       {
         "items": [
           {
-            "id": 3582,
-            "count": 1
+            "count": 1,
+            "id": 3582
           },
           {
-            "id": 651,
-            "count": 1
+            "count": 1,
+            "id": 651
           },
           {
-            "id": 3232,
-            "count": 1
+            "count": 1,
+            "id": 3232
           }
         ],
         "value": "EXTRAS",
@@ -1244,24 +1279,24 @@
       {
         "items": [
           {
-            "id": 12733,
-            "count": 1
+            "count": 1,
+            "id": 12733
           },
           {
-            "id": 3997,
-            "count": 1
+            "count": 1,
+            "id": 3997
           },
           {
-            "id": 14086,
-            "count": 1
+            "count": 1,
+            "id": 14086
           },
           {
-            "id": 11978,
-            "count": 1
+            "count": 1,
+            "id": 11978
           },
           {
-            "id": 11372,
-            "count": 1
+            "count": 1,
+            "id": 11372
           }
         ],
         "value": "EXTRAS 2",
@@ -1285,21 +1320,6 @@
     "height": 300,
     "lootBag": true
   },
-  "bestHeal": 0,
-  "_macros": {
-    "": true,
-    "ANTI KICK": true,
-    "SELL WAND": true,
-    "BLESS": true,
-    "ANTI RED SKULL": true,
-    "HASTE": true,
-    "EAT FOOD": true,
-    "HOLY BLESS": false,
-    "HIDE TREES": true,
-    "SMART TARGET": true,
-    "EXCHANGE MONEY": true,
-    "EXCHANGE ONLINE TOKENS": true,
-    "USE ONLINE TOKENS": true,
-    "CAST": true
-  }
+  "followLeader": "Xandaodruid",
+  "bestHeal": 0
 }
