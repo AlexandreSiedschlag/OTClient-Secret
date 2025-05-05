@@ -4,8 +4,8 @@
     "attackSpellEnabled": false,
     "attackLeaderTargetEnabled": false,
     "shootLeader": "",
-    "onCastEnabled": false,
-    "followLeaderEnabled": false,
+    "serverTriggers": true,
+    "serverLeaderTarget": false,
     "commandsEnabled": true,
     "serverEnabled": false,
     "onSayEnabled": false,
@@ -14,10 +14,10 @@
     "spell": "",
     "onShootEnabled": false,
     "attackItemToggle": false,
-    "serverTriggers": true,
+    "onCastEnabled": false,
     "item": 3155,
     "sayPhrase": "",
-    "serverLeaderTarget": false,
+    "followLeaderEnabled": false,
     "serverLeader": "",
     "sayLeader": "",
     "follow": "",
@@ -40,31 +40,31 @@
     "joinBot": false,
     "lootLast": true,
     "holdMwHot": "F5",
-    "reachable": false,
-    "shovel": 9596,
     "lootDelay": 200,
+    "shovel": 9596,
+    "reachable": false,
     "talkDelay": 1000,
     "autoOpenDoors": true,
-    "holdWgHot": "F6",
-    "nextBackpack": true,
+    "stake": false,
+    "scythe": 9596,
     "oberon": true,
     "huntRoutes": 50,
     "antiKick": true,
     "title": true,
-    "scythe": 9596,
-    "stake": false,
+    "nextBackpack": true,
+    "holdWgHot": "F6",
     "highlightTarget": true,
     "height": 360,
     "bless": true
   },
   "foodItems": [
     {
-      "count": 1,
-      "id": 3582
+      "id": 3582,
+      "count": 1
     },
     {
-      "count": 1,
-      "id": 3577
+      "id": 3577,
+      "count": 1
     },
     {
       "id": 3607,
@@ -85,30 +85,38 @@
     {
       "id": 3601,
       "count": 1
+    },
+    {
+      "id": 3727,
+      "count": 4
     }
   ],
   "dropper": {
     "enabled": true,
     "trashItems": [
       {
-        "id": 283,
-        "count": 1
+        "count": 1,
+        "id": 283
       },
       {
-        "id": 284,
-        "count": 1
+        "count": 1,
+        "id": 284
       },
       {
-        "id": 285,
-        "count": 1
+        "count": 1,
+        "id": 285
       },
       {
-        "id": 3725,
-        "count": 13
+        "count": 13,
+        "id": 3725
       },
       {
-        "id": 2996,
-        "count": 1
+        "count": 1,
+        "id": 2996
+      },
+      {
+        "count": 1,
+        "id": 9211
       }
     ],
     "useItems": [
@@ -125,9 +133,12 @@
     ]
   },
   "secretTasker": {
-    "monsterAmountMax": 30,
+    "monsterAmountMax": 80,
     "staminaPotionId": 11372,
     "monsterRegex": "\\[Task System\\] You kill \\[([0-9]+)/([0-9]+)\\] ([A-Za-z ]+)\\.",
+    "staminaPotionEnabled": false,
+    "monsterAmountNow": 80,
+    "staminaMinimum": 15,
     "whatToDo": [
       "setup",
       "getTask",
@@ -135,8 +146,8 @@
       "checkStamina",
       "reportTask"
     ],
-    "monsterAmountNow": 30,
-    "staminaMinimum": 15,
+    "monsterActual": "Orcs",
+    "taskName": "Behemoths",
     "taskInfo": {
       "Frost Dragons": {
         "task_points": 7,
@@ -203,7 +214,7 @@
         "boss": [
           "Orc Warlord"
         ],
-        "done": false,
+        "done": true,
         "amount_of_task_todo": 3
       },
       "Pirates": {
@@ -229,21 +240,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Blue Djins": {
-        "task_points": 11,
+      "Ancient Scarab": {
+        "task_points": 6,
         "monsters": [
-          "Blue Djinn"
+          "Ancient Scarab"
         ],
-        "monsters_to_kill": 4300,
+        "monsters_to_kill": 1300,
         "drops": [
-          "Blue Piece of Cloth"
+
         ],
-        "experience": 6200000,
+        "experience": 3000000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Mahrdis"
+          "Scarab Lord"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -317,21 +328,26 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Iron Servant": {
-        "task_points": 15,
+      "Lizards": {
+        "task_points": 14,
         "monsters": [
-          "Iron Servant"
+          "Lizard Sentinel",
+          "Lizard Templar",
+          "Lizard Snakecharmer",
+          "Lizard Dragon Priest",
+          "Lizard High Guard",
+          "Lizard Legionnaire"
         ],
-        "monsters_to_kill": 7250,
+        "monsters_to_kill": 7000,
         "drops": [
-          "Slime Mould"
+
         ],
-        "experience": 8700000,
+        "experience": 8500000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Iron Colossus"
+          "Lizard King"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -436,28 +452,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Demons": {
-        "task_points": 9,
+      "Deathstrike": {
+        "task_points": 21,
         "monsters": [
-          "Demon"
+          "Deathstrike"
         ],
-        "monsters_to_kill": 3500,
+        "monsters_to_kill": 9000,
         "drops": [
-          "magic plate armor",
-          "golden legs",
-          "demon shield",
-          "mastermind shield",
-          "devil helmet",
-          "fire axe",
-          "giant sword",
-          "might ring"
+
         ],
-        "experience": 5000000,
+        "experience": 12900000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Demon Overlord"
+          "Lord Deathstrike"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -585,7 +594,7 @@
         ],
         "experience": 550000,
         "in_progress": true,
-        "monsters_killed": 30,
+        "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
           "Rotworm Queen"
@@ -593,21 +602,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Killer Caiman": {
-        "task_points": 13,
+      "Sandstone Scorpion": {
+        "task_points": 12,
         "monsters": [
-          "Killer Caiman"
+          "Sandstone Scorpion"
         ],
-        "monsters_to_kill": 5000,
+        "monsters_to_kill": 4750,
         "drops": [
 
         ],
-        "experience": 7000000,
+        "experience": 6700000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Caiman Master"
+          "Scorpion King"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -699,25 +708,6 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Crawler": {
-        "task_points": 20,
-        "monsters": [
-          "Crawler"
-        ],
-        "monsters_to_kill": 9000,
-        "drops": [
-
-        ],
-        "experience": 12300000,
-        "in_progress": false,
-        "monsters_killed": 0,
-        "amount_of_task_done": 0,
-        "boss": [
-          "Giant Crawler"
-        ],
-        "done": false,
-        "amount_of_task_todo": 3
-      },
       "Hellflayer": {
         "task_points": 19,
         "monsters": [
@@ -743,6 +733,25 @@
         "done": false,
         "amount_of_task_todo": 3
       },
+      "Crawler": {
+        "task_points": 20,
+        "monsters": [
+          "Crawler"
+        ],
+        "monsters_to_kill": 9000,
+        "drops": [
+
+        ],
+        "experience": 12300000,
+        "in_progress": false,
+        "monsters_killed": 0,
+        "amount_of_task_done": 0,
+        "boss": [
+          "Giant Crawler"
+        ],
+        "done": false,
+        "amount_of_task_todo": 3
+      },
       "Elfs": {
         "task_points": 4,
         "monsters": [
@@ -764,21 +773,28 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Deathstrike": {
-        "task_points": 21,
+      "Demons": {
+        "task_points": 9,
         "monsters": [
-          "Deathstrike"
+          "Demon"
         ],
-        "monsters_to_kill": 9000,
+        "monsters_to_kill": 3500,
         "drops": [
-
+          "magic plate armor",
+          "golden legs",
+          "demon shield",
+          "mastermind shield",
+          "devil helmet",
+          "fire axe",
+          "giant sword",
+          "might ring"
         ],
-        "experience": 12900000,
+        "experience": 5000000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Lord Deathstrike"
+          "Demon Overlord"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -837,13 +853,11 @@
           "steel boots",
           "titan axe",
           "war axe",
-          "giant sword",
-          "dark armor",
-          "plate armor"
+          "giant sword"
         ],
         "experience": 2500000,
         "in_progress": true,
-        "monsters_killed": 159,
+        "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
           "Behemoth King"
@@ -995,26 +1009,21 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Lizards": {
-        "task_points": 14,
+      "Iron Servant": {
+        "task_points": 15,
         "monsters": [
-          "Lizard Sentinel",
-          "Lizard Templar",
-          "Lizard Snakecharmer",
-          "Lizard Dragon Priest",
-          "Lizard High Guard",
-          "Lizard Legionnaire"
+          "Iron Servant"
         ],
-        "monsters_to_kill": 7000,
+        "monsters_to_kill": 7250,
         "drops": [
-
+          "Slime Mould"
         ],
-        "experience": 8500000,
+        "experience": 8700000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Lizard King"
+          "Iron Colossus"
         ],
         "done": false,
         "amount_of_task_todo": 3
@@ -1047,48 +1056,45 @@
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Ancient Scarab": {
-        "task_points": 6,
+      "Blue Djins": {
+        "task_points": 11,
         "monsters": [
-          "Ancient Scarab"
+          "Blue Djinn"
         ],
-        "monsters_to_kill": 1300,
+        "monsters_to_kill": 4300,
         "drops": [
-
+          "Blue Piece of Cloth"
         ],
-        "experience": 3000000,
+        "experience": 6200000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Scarab Lord"
+          "Mahrdis"
         ],
         "done": false,
         "amount_of_task_todo": 3
       },
-      "Sandstone Scorpion": {
-        "task_points": 12,
+      "Killer Caiman": {
+        "task_points": 13,
         "monsters": [
-          "Sandstone Scorpion"
+          "Killer Caiman"
         ],
-        "monsters_to_kill": 4750,
+        "monsters_to_kill": 5000,
         "drops": [
 
         ],
-        "experience": 6700000,
+        "experience": 7000000,
         "in_progress": false,
         "monsters_killed": 0,
         "amount_of_task_done": 0,
         "boss": [
-          "Scorpion King"
+          "Caiman Master"
         ],
         "done": false,
         "amount_of_task_todo": 3
       }
-    },
-    "monsterActual": "Worms",
-    "taskName": "Worms",
-    "staminaPotionEnabled": false
+    }
   },
   "analyzers": {
     "lootChannel": true,
@@ -1112,12 +1118,12 @@
   },
   "_configs": {
     "SecretBot/Target/Configs": {
-      "enabled": true,
+      "enabled": false,
       "selected": "ALL_MONSTERS"
     },
     "SecretBot/Cave/Scripts": {
       "enabled": false,
-      "selected": "test_tasker"
+      "selected": "Hunt_07_Behemoths_Ok"
     }
   },
   "pushmax": {
@@ -1127,22 +1133,23 @@
     "enabled": false,
     "pushMaxKey": "PageUp"
   },
-  "advancedFriendHealer": {
-    "itemHeal": true,
-    "healEd": true,
-    "id": 3160,
-    "healRp": true,
-    "exuraSio": true,
-    "healMs": true,
-    "minMana": 60,
-    "exuraGranSio": true,
-    "customSpell": false,
-    "customSpellName": "exura max sio",
-    "minFriendHp": 40,
-    "enabled": true,
-    "distance": 8,
-    "exuraMasRes": true,
-    "healEk": true
+  "_macros": {
+    "": false,
+    "USE ONLINE TOKENS": true,
+    "ANTI KICK": true,
+    "BLESS": true,
+    "EXCHANGE ONLINE TOKENS": true,
+    "ANTI RED SKULL": true,
+    "SAFE ML TRAINER": true,
+    "EAT FOOD": true,
+    "CAST FOOD": false,
+    "HOLY BLESS": false,
+    "HIDE TREES": true,
+    "SMART TARGET": true,
+    "SELL WAND": true,
+    "HASTE": true,
+    "EXCHANGE MONEY": true,
+    "CAST": true
   },
   "autoParty": {
     "onMove": true,
@@ -1152,38 +1159,21 @@
     ],
     "leaderName": "Xandaodruid"
   },
-  "_macros": {
-    "": true,
-    "ANTI KICK": true,
-    "SAFE ML TRAINER": false,
-    "BLESS": true,
-    "EXCHANGE ONLINE TOKENS": true,
-    "ANTI RED SKULL": true,
-    "EXCHANGE MONEY": true,
-    "EAT FOOD": true,
-    "CAST FOOD": false,
-    "HOLY BLESS": false,
-    "HIDE TREES": true,
-    "SMART TARGET": true,
-    "USE ONLINE TOKENS": true,
-    "HASTE": true,
-    "SELL WAND": true,
-    "CAST": true
-  },
+  "bestHeal": 0,
   "playerList": {
     "enemyList": [
 
     ],
     "outfits": false,
-    "groupMembers": true,
     "friendList": [
 
     ],
+    "groupMembers": true,
     "highlight": false,
-    "marks": false,
     "blackList": [
 
-    ]
+    ],
+    "marks": false
   },
   "BOTserver": {
     "manaInfo": true,
@@ -1297,6 +1287,42 @@
           {
             "count": 1,
             "id": 11372
+          },
+          {
+            "count": 1,
+            "id": 11980
+          },
+          {
+            "count": 1,
+            "id": 8778
+          },
+          {
+            "count": 1,
+            "id": 13292
+          },
+          {
+            "count": 1,
+            "id": 12579
+          },
+          {
+            "count": 1,
+            "id": 12736
+          },
+          {
+            "count": 1,
+            "id": 11979
+          },
+          {
+            "count": 3,
+            "id": 11968
+          },
+          {
+            "count": 1,
+            "id": 12813
+          },
+          {
+            "count": 2,
+            "id": 12729
           }
         ],
         "value": "EXTRAS 2",
@@ -1321,5 +1347,21 @@
     "lootBag": true
   },
   "followLeader": "Xandaodruid",
-  "bestHeal": 0
+  "advancedFriendHealer": {
+    "itemHeal": true,
+    "healEd": true,
+    "id": 3160,
+    "healRp": true,
+    "exuraSio": true,
+    "healMs": true,
+    "minMana": 60,
+    "exuraGranSio": true,
+    "customSpellName": "exura max sio",
+    "customSpell": false,
+    "minFriendHp": 40,
+    "enabled": true,
+    "distance": 8,
+    "exuraMasRes": true,
+    "healEk": true
+  }
 }

@@ -56,24 +56,9 @@ Panel
     y: 530
     font: verdana-11px-rounded
   Label
-    id: taskCompletedLabel
-    x: 202
-    y: 545
-    font: verdana-11px-rounded
-  Label
-    id: taskInProgressLabel
-    x: 202
-    y: 560
-    font: verdana-11px-rounded
-  Label
-    id: taskDoneLabel
-    x: 202
-    y: 575
-    font: verdana-11px-rounded
-  Label
     id: taskBossLabel
     x: 202
-    y: 590
+    y: 545
     font: verdana-11px-rounded
 ]], g_ui.getRootWidget())
 
@@ -107,24 +92,6 @@ local function getMagicLevel()
     return magiclevel
 end
 
-local function getTaskInProgress(taskData)
-    local taskInProgress = taskData.in_progress
-    if taskInProgress then
-        return "YES"
-    else
-        return "NO"
-    end
-end
-
-local function getTaskDone(taskData)
-    local taskDone = taskData.done
-    if taskDone then
-        return "YES"
-    else
-        return "NO"
-    end
-end
-
 macro(100, function()
     -- Target
     local targetStatus = getTargetBotStatus()
@@ -149,18 +116,12 @@ macro(100, function()
     local taskCounter = "No Task"
     if taskData then
         taskCounter = taskData.monsters_killed .. " / " .. taskData.monsters_to_kill
-        taskCompleted = taskData.amount_of_task_done .. " / " .. taskData.amount_of_task_todo
-        taskInProgress = getTaskInProgress(taskData)
-        taskDone = getTaskDone(taskData)
         taskBoss = taskData.boss[1]
     end
 
     ui.taskMarkerLabel:setColoredText({"----Task----", "white", "", "yellow"})
     ui.taskNameLabel:setColoredText({"Name: ", "white", taskName, "yellow"})
     ui.taskCounterLabel:setColoredText({"Counter: ", "white", taskCounter, "yellow"})
-    ui.taskCompletedLabel:setColoredText({"Completed: ", "white", taskCompleted, "yellow"})
-    ui.taskInProgressLabel:setColoredText({"In Progress: ", "white", taskInProgress, "yellow"})
-    ui.taskDoneLabel:setColoredText({"Done: ", "white", taskDone, "yellow"})
     ui.taskBossLabel:setColoredText({"Boss: ", "white", taskBoss, "yellow"})
 
 end)

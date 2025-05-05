@@ -24,8 +24,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Rotworm Queen"},
                 ["monsters"] = {"Rotworm", "Carrion Worm", "Terramite"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Orcs"] = {
                 ["monsters_killed"] = 0,
@@ -37,8 +35,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Orc Warlord"},
                 ["monsters"] = {"Orc", "Orc Warrior", "Orc Spearman", "Orc Berserker", "Orc Leader", "Orc Shaman", "Orc Rider"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Dragons"] = {
                 ["monsters_killed"] = 0,
@@ -50,8 +46,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Dragon King"},
                 ["monsters"] = {"Dragon", "Dragon Lord", "Dragon Hatchling", "Dragonling"},
                 ["drops"] = {"red dragon leather"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Minotaur"] = {
                 ["monsters_killed"] = 0,
@@ -63,8 +57,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Minotaur King"},
                 ["monsters"] = {"Minotaur", "Minotaur Archer", "Minotaur Guard", "Minotaur Mage"},
                 ["drops"] = {"minotaur leather"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Medusas"] = {
                 ["monsters_killed"] = 0,
@@ -76,8 +68,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Gorgo"},
                 ["monsters"] = {"Medusa", "Serpent Spawn"},
                 ["drops"] = {"medusa shield"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Kongras"] = {
                 ["monsters_killed"] = 0,
@@ -89,8 +79,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Ape King"},
                 ["monsters"] = {"Kongra", "Merlkin", "Sibang"},
                 ["drops"] = {"ape fur"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Giant Spider"] = {
                 ["monsters_killed"] = 0,
@@ -102,8 +90,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Spider Queen"},
                 ["monsters"] = {"Giant Spider"},
                 ["drops"] = {"knight armor", "knight legs", "time ring"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Hydras"] = {
                 ["monsters_killed"] = 0,
@@ -115,8 +101,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Hydra King"},
                 ["monsters"] = {"Hydra"},
                 ["drops"] = {"hydra head", "medusa shield", "royal helmet", "boots of haste", "knight armor", "warrior helmet", "stone skin amulet"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Elfs"] = {
                 ["monsters_killed"] = 0,
@@ -128,8 +112,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Elf Lord"},
                 ["monsters"] = {"Elf", "Elf Scout", "Elf Arcanist"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Pirates"] = {
                 ["monsters_killed"] = 0,
@@ -141,8 +123,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Pirate Captain"},
                 ["monsters"] = {"Pirate Buccaneer", "Pirate Corsair", "Pirate Cutthroat", "Pirate Ghost", "Pirate Marauder"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Behemoths"] = {
                 ["monsters_killed"] = 0,
@@ -153,9 +133,7 @@ if not storage.secretTasker then
                 ["experience"] = 2500000,
                 ["boss"] = {"Behemoth King"},
                 ["monsters"] = {"Behemoth"},
-                ["drops"] = {"behemoth claw", "perfect behemoth fang", "steel boots", "titan axe", "war axe", "giant sword", "dark armor", "plate armor"},
-                ["in_progress"] = false,
-                ["done"] = false
+                ["drops"] = {"behemoth claw", "perfect behemoth fang", "steel boots", "titan axe", "war axe", "giant sword"},
             },
             ["Wyrms"] = {
                 ["monsters_killed"] = 0,
@@ -167,8 +145,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Wyrm Lord"},
                 ["monsters"] = {"Wyrm"},
                 ["drops"] = {"small diamond"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Warlocks"] = {
                 ["monsters_killed"] = 0,
@@ -180,8 +156,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Master Warlock"},
                 ["monsters"] = {"Warlock"},
                 ["drops"] = {"blue robe", "piggy bank", "ring of the sky", "stone skin amulet", "golden armor"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Ancient Scarab"] = {
                 ["monsters_killed"] = 0,
@@ -193,8 +167,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Scarab Lord"},
                 ["monsters"] = {"Ancient Scarab"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Frost Dragons"] = {
                 ["monsters_killed"] = 0,
@@ -206,8 +178,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Frost Dragon King"},
                 ["monsters"] = {"Frost Dragon", "Frost Dragon Hatchling"},
                 ["drops"] = {"shard", "dragon scale mail", "royal helmet", "tower shield", "dragon slayer"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Elder Wyrms"] = {
                 ["monsters_killed"] = 0,
@@ -219,8 +189,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Elder Wyrm Lord"},
                 ["monsters"] = {"Elder Wyrm"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Quaras"] = {
                 ["monsters_killed"] = 0,
@@ -236,8 +204,6 @@ if not storage.secretTasker then
                     "Quara Predator", "Quara Predator Scout"
                 },
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Grim Reapers"] = {
                 ["monsters_killed"] = 0,
@@ -249,8 +215,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Grim Reaper King"},
                 ["monsters"] = {"Grim Reaper"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Demons"] = {
                 ["monsters_killed"] = 0,
@@ -262,8 +226,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Demon Overlord"},
                 ["monsters"] = {"Demon"},
                 ["drops"] = {"magic plate armor", "golden legs", "demon shield", "mastermind shield", "devil helmet", "fire axe", "giant sword", "might ring"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Dworcs"] = {
                 ["monsters_killed"] = 0,
@@ -275,8 +237,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Dworc Leader"},
                 ["monsters"] = {"Dworc Fleshhunter", "Dworc Venomsniper", "Dworc Voodoomaster"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Orshabaals"] = {
                 ["monsters_killed"] = 0,
@@ -288,8 +248,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Orshabaal"},
                 ["monsters"] = {"Orshabaal"},
                 ["drops"] = {"thunder hammer", "magic plate armor", "golden legs", "demon shield", "mastermind shield", "devil helmet", "boots of haste", "fire axe", "giant sword", "might ring", "stone skin amulet", "ring of the sky"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Wailing Widow"] = {
                 ["monsters_killed"] = 0,
@@ -301,8 +259,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Wailing Queen"},
                 ["monsters"] = {"Wailing Widow"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Ferumbras"] = {
                 ["monsters_killed"] = 0,
@@ -314,8 +270,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Ferumbras"},
                 ["monsters"] = {"Ferumbras"},
                 ["drops"] = {"magic plate armor", "golden legs", "golden armor",  "demon shield", "mastermind shield", "devil helmet", "boots of haste", "fire axe", "giant sword", "might ring", "stone skin amulet", "ring of the sky"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Blue Djins"] = {
                 ["monsters_killed"] = 0,
@@ -327,8 +281,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Mahrdis"},
                 ["monsters"] = {"Blue Djinn"},
                 ["drops"] = {"Blue Piece of Cloth"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Vampires"] = {
                 ["monsters_killed"] = 0,
@@ -340,8 +292,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Countess Sorrow"},
                 ["monsters"] = {"Vampire", "Vampire Bride", "Vampire Viscount"},
                 ["drops"] = {"vampire shield"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Sandstone Scorpion"] = {
                 ["monsters_killed"] = 0,
@@ -353,8 +303,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Scorpion King"},
                 ["monsters"] = {"Sandstone Scorpion"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Killer Caiman"] = {
                 ["monsters_killed"] = 0,
@@ -366,8 +314,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Caiman Master"},
                 ["monsters"] = {"Killer Caiman"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Askarak Demon"] = {
                 ["monsters_killed"] = 0,
@@ -379,8 +325,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Askarak Emperor"},
                 ["monsters"] = {"Askarak Demon", "Askarak Lord", "Askarak Prince"},
                 ["drops"] = {"magic sulphur", "piggy bank", "magic plate armor", "mastermind shield"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Lizards"] = {
                 ["monsters_killed"] = 0,
@@ -392,8 +336,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Lizard King"},
                 ["monsters"] = {"Lizard Sentinel", "Lizard Templar", "Lizard Snakecharmer", "Lizard Dragon Priest", "Lizard High Guard", "Lizard Legionnaire"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Iron Servant"] = {
                 ["monsters_killed"] = 0,
@@ -405,8 +347,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Iron Colossus"},
                 ["monsters"] = {"Iron Servant"},
                 ["drops"] = {"Slime Mould"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Bane Bringer"] = {
                 ["monsters_killed"] = 0,
@@ -418,8 +358,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Bringer of Bane"},
                 ["monsters"] = {"Bane Bringer"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Azerus"] = {
                 ["monsters_killed"] = 0,
@@ -431,8 +369,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Azerus"},
                 ["monsters"] = {"Azerus"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Heroes"] = {
                 ["monsters_killed"] = 0,
@@ -444,8 +380,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Mighty Hero"},
                 ["monsters"] = {"Hero"},
                 ["drops"] = {"Red Piece of Cloth", "might ring", "fire sword", "crown armor", "crown legs", "crown shield", "piggy bank"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Green Djins"] = {
                 ["monsters_killed"] = 0,
@@ -457,8 +391,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Nouryal"},
                 ["monsters"] = {"Green Djinn"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Souleater"] = {
                 ["monsters_killed"] = 0,
@@ -470,8 +402,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Soulcrusher"},
                 ["monsters"] = {"Souleater"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Glooth Golem"] = {
                 ["monsters_killed"] = 0,
@@ -483,8 +413,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Glooth Annihilator"},
                 ["monsters"] = {"Glooth Golem"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Byron"] = {
                 ["monsters_killed"] = 0,
@@ -496,8 +424,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Lord Byron"},
                 ["monsters"] = {"Byron"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Dracarys"] = {
                 ["monsters_killed"] = 0,
@@ -509,8 +435,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Dracarys"},
                 ["monsters"] = {"Dracarys"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Hellflayer"] = {
                 ["monsters_killed"] = 0,
@@ -522,8 +446,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Hell King"},
                 ["monsters"] = {"Hellflayer"},
                 ["drops"] = {"magic plate armor", "mastermind sheild", "skull helmet", "golden armor", "magma boots", "magma legs", "titan axe"},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Deepling Brawler"] = {
                 ["monsters_killed"] = 0,
@@ -535,8 +457,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Deepling Champion"},
                 ["monsters"] = {"Deepling Brawler"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Crawler"] = {
                 ["monsters_killed"] = 0,
@@ -548,8 +468,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Giant Crawler"},
                 ["monsters"] = {"Crawler"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Crystalcrusher"] = {
                 ["monsters_killed"] = 0,
@@ -561,8 +479,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Crystal King"},
                 ["monsters"] = {"Crystalcrusher"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Deathstrike"] = {
                 ["monsters_killed"] = 0,
@@ -574,8 +490,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Lord Deathstrike"},
                 ["monsters"] = {"Deathstrike"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Deepling Elite"] = {
                 ["monsters_killed"] = 0,
@@ -587,8 +501,6 @@ if not storage.secretTasker then
                 ["boss"] = {"Deepling Master"},
                 ["monsters"] = {"Deepling Elite"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Silencers"] = {
                 ["monsters_killed"] = 0,
@@ -600,8 +512,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Silencer"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Retching Horror"] = {
                 ["monsters_killed"] = 0,
@@ -613,8 +523,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Retching Horror"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Nightmare"] = {
                 ["monsters_killed"] = 0,
@@ -626,8 +534,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Nightmare"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Juggernaut"] = {
                 ["monsters_killed"] = 0,
@@ -639,8 +545,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Juggernaut"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Hellhound"] = {
                 ["monsters_killed"] = 0,
@@ -652,8 +556,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Hellhound"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Choking Fear"] = {
                 ["monsters_killed"] = 0,
@@ -665,8 +567,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Choking Fear"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Blightwalker"] = {
                 ["monsters_killed"] = 0,
@@ -678,8 +578,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Blightwalker"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Betrayed Wraith"] = {
                 ["monsters_killed"] = 0,
@@ -691,8 +589,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Betrayed Wraith"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Frazzlemaw"] = {
                 ["monsters_killed"] = 0,
@@ -704,8 +600,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Frazzlemaw"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Guzzlemaw"] = {
                 ["monsters_killed"] = 0,
@@ -717,8 +611,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Guzzlemaw"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             },
             ["Sight of Surrender and Shock Head"] = {
                 ["monsters_killed"] = 0,
@@ -730,8 +622,6 @@ if not storage.secretTasker then
                 ["boss"] = {""},
                 ["monsters"] = {"Sight of Surrender", "Shock Head"},
                 ["drops"] = {},
-                ["in_progress"] = false,
-                ["done"] = false
             }
         }
     }
@@ -837,9 +727,8 @@ CaveBot.Extensions.SecretTasker.setup = function()
                 delay(2000)
                 CaveBot.Conversation("status")
                 delay(2000)
-                storage.secretTasker.taskInfo[storage.secretTasker.taskName].in_progress = true
                 return true
-                Looking for tank for Exp Party
+
             elseif whatToDo == 'checkTask' then
                 local labelTrue = list[2] and list[2]:trim()
                 local labelFalse = list[3] and list[3]:trim()
@@ -853,10 +742,15 @@ CaveBot.Extensions.SecretTasker.setup = function()
             elseif whatToDo == "reportTask" then
                 followTarget("Tasks")
                 delay(2000)
-                CaveBot.Conversation("hi", "report", storage.secretTasker.taskName, "yes")
+                CaveBot.Conversation("hi")
                 delay(2000)
-                CaveBot.Conversation("hi", "status")
+                CaveBot.Conversation("report", storage.secretTasker.taskName, "yes")
                 delay(2000)
+                CaveBot.Conversation("yes")
+                delay(2000)
+                CaveBot.Conversation("status")
+                delay(2000)
+                storage.secretTasker.taskInfo[storage.secretTasker.taskName]['monsters_killed'] = 0
                 return true
 
             elseif whatToDo == "checkStamina" then
@@ -905,9 +799,10 @@ onTextMessage(function(mode, text)
         storage.secretTasker.monsterAmountMax = monsterAmountMax
 
         if storage.secretTasker.taskInfo[taskName] then
-            storage.secretTasker.taskInfo[taskName].monsters_killed = monsterAmountNow
-            storage.secretTasker.taskInfo[taskName].monsters_to_kill = monsterAmountMax
-            storage.secretTasker.taskInfo[taskName].in_progress = true
+            if storage.secretTasker.taskInfo[taskName].monsters_killed < storage.secretTasker.taskInfo[taskName].monsters_to_kill then
+                storage.secretTasker.taskInfo[taskName].monsters_killed = monsterAmountNow
+                storage.secretTasker.taskInfo[taskName].monsters_to_kill = monsterAmountMax
+            end
         end
 
         print("[CaveBot][SecretTasker]: Current amount: " ..
@@ -915,25 +810,10 @@ onTextMessage(function(mode, text)
         return
     end
 
-    -- Task finished
-    local taskFinishedMatch = regexMatch(text, storage.secretTasker.taskFinishedRegex)
-    if #taskFinishedMatch == 1 and #taskFinishedMatch[1] == 2 then
-        local taskName = taskFinishedMatch[1][2]
-        if storage.secretTasker.taskInfo[taskName] then
-            storage.secretTasker.taskInfo[taskName].monsters_killed =
-                storage.secretTasker.taskInfo[taskName].monsters_killed + 1
-            storage.secretTasker.taskInfo[taskName].in_progress = false
-            storage.secretTasker.taskInfo[taskName].done = true
-        end
-        print("[CaveBot][SecretTasker]: Task " .. taskName .. " finished.")
-    end
-
     -- Task delivered
     local taskDeliveredMatch = regexMatch(text, storage.secretTasker.taskDeliveredRegex)
     if #taskDeliveredMatch == 1 then
         print("[CaveBot][SecretTasker]: Task entregue com sucesso!")
-        storage.secretTasker.taskInfo[storage.secretTasker.taskName].in_progress = false
-        storage.secretTasker.taskInfo[storage.secretTasker.taskName].done = true
         storage.secretTasker.taskInfo[storage.secretTasker.taskName].amount_of_task_done = storage.secretTasker.taskInfo[storage.secretTasker.taskName].amount_of_task_done + 1
     end
 end)

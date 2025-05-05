@@ -8,12 +8,12 @@
     "containers": [
 
     ],
-    "everyItem": false
+    "everyItem": true
   },
   "targeting": [
     {
       "useSpellAttack": true,
-      "useRuneAttack": false,
+      "useRuneAttack": true,
       "minMana": 200,
       "avoidAttacks": false,
       "groupAttackTargets": 2,
@@ -27,22 +27,22 @@
       "groupAttackIgnorePlayers": false,
       "maxDistance": 10,
       "groupAttackIgnoreParty": false,
-      "lureCount": 4,
+      "lureCount": 3,
       "useGroupAttack": false,
       "groupRuneAttackTargets": 2,
-      "attackSpell": "Exevo gran mas frigo",
+      "attackSpell": "Demonic pox",
       "groupAttackRune": 0,
       "groupAttackRadius": 1,
       "keepDistanceRange": 1,
       "groupRuneAttackDelay": 5000,
       "priority": 1,
-      "attackRune": 0,
+      "attackRune": 3155,
       "groupAttackDelay": 5000,
       "minManaGroup": 1500,
       "lure": false,
       "keepDistance": false,
       "attackSpellDelay": 2500,
-      "chase": true,
+      "chase": false,
       "name": "*",
       "regex": "^.*$"
     }
